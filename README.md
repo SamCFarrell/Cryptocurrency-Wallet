@@ -1,14 +1,12 @@
-## Unit 19 Homework: Cryptocurrency Wallet
+# Cryptocurrency Wallet
 
-![An image shows a wallet with bitcoin.](Images/19-4-challenge-image.png)
-
-### Background
+## Background
 
 You work at a startup that is building a new and disruptive platform called KryptoJobs2Go. KryptoJobs2Go is an application that its customers can use to find fintech professionals from among a list of candidates, hire them, and pay them. As KryptoJobs2Go’s lead developer, you have been tasked with integrating the Ethereum blockchain network into the application in order to enable your customers to instantly pay the fintech professionals whom they hire with cryptocurrency.
 
 In this Challenge, you will complete the code that enables your customers to send cryptocurrency payments to fintech professionals. To develop the code and test it out, you will assume the perspective of a KryptoJobs2Go customer who is using the application to find a fintech professional and pay them for their work.
 
-### What You're Creating
+## What You're Creating
 
 To complete this Challenge, you will use two Python files, both of which are contained in the starter folder.
 
@@ -32,7 +30,7 @@ Specifically, you will assume the perspective of a KryptoJobs2Go customer in ord
 
 Once you receive the transaction’s hash code, you will navigate to the Transactions section of Ganache to review the blockchain transaction details. To confirm that you have successfully created the transaction, you will save screenshots to the README.md file of your GitHub repository for this Challenge assignment.
 
-### Instructions
+## Instructions
 
 The steps for this challenge are broken out into the following sections:
 
@@ -40,7 +38,7 @@ The steps for this challenge are broken out into the following sections:
 * Sign and Execute a Payment Transaction
 * Inspect the Transaction on Ganache
 
-#### Step 1: Import Ethereum Transaction Functions into the KryptoJobs2Go Application
+### Step 1: Import Ethereum Transaction Functions into the KryptoJobs2Go Application
 
 In this section, you'll import several functions from the `crypto_wallet.py` script into the file `krypto_jobs.py`, which contains code for KryptoJobs2Go’s customer interface, in order to add wallet operations to the application. For this section, you will assume the perspective of a KryptoJobs2Go customer (i.e., you’ll provide your Ethereum wallet and account information to the application).
 
@@ -62,7 +60,7 @@ Complete the following steps:
 
 5. Within this same section of the `krypto_jobs.py` file, define a new `st.sidebar.write` function that will display the balance of the customer’s account. Inside this function, call the `get_balance` function and pass it your Ethereum `account.address`.
 
-#### Step 2: Sign and Execute a Payment Transaction
+### Step 2: Sign and Execute a Payment Transaction
 
 Next, you'll write the code that will calculate a fintech professional’s wage, in ether, based on the worker’s hourly rate and the number of hours that they work for a customer. (The fintech professionals’ hourly rates are provided in the `candidate_database` that is found in `krypto_jobs.py`.)
 
@@ -88,7 +86,7 @@ To accomplish all of this, complete the following steps:
 
     * Save the transaction hash that the `send_transaction` function returns as a variable named `transaction_hash`, and have it display on the application’s web interface.
 
-#### Step 3: Inspect the Transaction
+### Step 3: Inspect the Transaction
 
 Now it's time to put it all together and test the KryptoJobs2Go application with your newly integrated Ethereum wallet. You will send a test transaction by using the application’s web interface, and then look up the resulting transaction in Ganache. To do so, complete the following steps:
 
@@ -108,10 +106,18 @@ Now it's time to put it all together and test the KryptoJobs2Go application with
 
 * Take a screenshot of the recipient’s address balance and history from your Ganache application. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
 
+## Screenshots
+
+### My Address and Balance:
+![My Address Balance](Images/Screenshots/my_address_balance.png)
+
+### Most Recent Transactions:
+![Transactions](Images/Screenshots/transactions.png)
+
+### Transaction 9 Details
+![Transaction 9 Details](Images/Screenshots/transaction_9_details.png)
+
+### Transaction 9 Recipient Address and Balance:
+![Transaction 9 Recipient Address Balance](Images/Screenshots/transaction_9_recipient_address_balance.png)
+
 ---
-
-## Submission
-
-* Upload the files for this assignment to your GitHub repository.
-
-* Submit the link to your GitHub repo on Bootcamp Spot.
