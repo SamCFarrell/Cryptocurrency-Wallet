@@ -28,7 +28,7 @@ Specifically, you will assume the perspective of a KryptoJobs2Go customer in ord
 
 * Review the transaction hash code associated with the validated blockchain transaction.
 
-Once you receive the transaction’s hash code, you will navigate to the Transactions section of Ganache to review the blockchain transaction details. To confirm that you have successfully created the transaction, you will save screenshots to the README.md file of your GitHub repository for this Challenge assignment.
+Once you receive the transaction’s hash code, you will navigate to the Transactions section of Ganache to review the blockchain transaction details. To confirm that you have successfully created the transaction, you will take screenshots and include them in a `Screenshots.md` file for your GitHub repository for this Challenge assignment.
 
 ## Instructions
 
@@ -98,26 +98,12 @@ Now it's time to put it all together and test the KryptoJobs2Go application with
 
 4. Click the Send Transaction button to sign and send the transaction with your Ethereum account information. Navigate to the Transactions section of Ganache.
 
-    * Take a screenshot of your address balance and history on Ganache. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
+    * Take a screenshot of your address balance and history on Ganache and save this screenshot to the `Screenshots.md` file of your GitHub repository for this Challenge assignment.
 
-    * Take a screenshot of the transaction details on Ganache. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
+    * Take a screenshot of the transaction details on Ganache and Save this screenshot to the `Screenshots.md` file of your GitHub repository for this Challenge assignment.
 
 5. Return to the original transaction, and click the transaction’s To address.
 
 * Take a screenshot of the recipient’s address balance and history from your Ganache application. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
-
-## Screenshots
-
-### My Address and Balance:
-![My Address Balance](Images/Screenshots/my_address_balance.png)
-
-### Most Recent Transactions:
-![Transactions](Images/Screenshots/transactions.png)
-
-### Transaction 9 Details
-![Transaction 9 Details](Images/Screenshots/transaction_9_details.png)
-
-### Transaction 9 Recipient Address and Balance:
-![Transaction 9 Recipient Address Balance](Images/Screenshots/transaction_9_recipient_address_balance.png)
 
 ---

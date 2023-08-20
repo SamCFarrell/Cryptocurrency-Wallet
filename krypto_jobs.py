@@ -30,7 +30,11 @@ from dataclasses import dataclass
 from typing import Any, List
 from web3 import Web3
 
-w3 = Web3(Web3.HTTPProvider("HTTP://127.0.0.1:8545"))
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
 ################################################################################
 # Step 1:
 # Import Ethereum Transaction Functions into the KryptoJobs2Go Application
@@ -90,28 +94,28 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 candidate_database = {
     "Lane": [
         "Lane",
-        "0x0939de09c8EB669C8CBf6595243a20573e2b37eF",
+        "0x7405a08a75E2ab6239BDF28C357f7A35898D3900",
         "4.3",
         0.20,
         "Images/Headshots/lane.jpeg",
     ],
     "Ash": [
         "Ash",
-        "0x25fE4c0eb3B84c7dCECE79c97032cf4891149938",
+        "0xDdeCDF96101b6a84027e0214D4D903A7BC89459F",
         "5.0",
         0.33,
         "Images/Headshots/ash.jpeg",
     ],
     "Jo": [
         "Jo",
-        "0x23218eEC9b609337D37a7915daa7e4c1f7A4403b",
+        "0x4175e7aD08e9Dc16fC9CF2463bA7cB5f991D5181",
         "4.7",
         0.19,
         "Images/Headshots/jo.jpeg",
     ],
     "Kendall": [
         "Kendall",
-        "0x2966DE1356f7d6Dbd4ae7170180854b892a68ffB",
+        "0xd098cEC910E46D9380673C587521a8265A424f73",
         "4.1",
         0.16,
         "Images/Headshots/kendall.jpeg",
